@@ -244,10 +244,6 @@ else
     echo "Server GUI enabled."
 fi
 
-# MCE library location
-MCE_LIB_PATH=/usr/local/src/smurf2mce/mcetransmit/lib/
-export PYTHONPATH=$MCE_LIB_PATH:${PYTHONPATH}
-
 echo "Starting server..."
 cd /data/smurf-processor_config/
 /usr/local/src/smurf-processor/scripts/control-server/python/pyrogue_server.py  ${args}
