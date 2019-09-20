@@ -11,7 +11,7 @@ ENV PYTHONPATH /usr/local/src/smurf-pcie/firmware/submodules/axi-pcie-core/pytho
 
 # Install smurf-processor
 WORKDIR /usr/local/src
-RUN git clone https://github.com/slaclab/smurf-processor.git -b R2.0.0
+RUN git clone https://github.com/slaclab/smurf-processor.git -b R2.1.0
 WORKDIR smurf-processor
 RUN mkdir build
 WORKDIR build
